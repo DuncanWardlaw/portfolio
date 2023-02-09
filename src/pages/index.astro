@@ -3,35 +3,33 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Duncan Wardlaw - Portfolio">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
+		<h1>Duncan Wardlaw.</h1>
+		<p>I'm a developer and I love creating things that work.</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="https://github.com/DuncanWardlaw"
+				title="GitHub"
+				body="Check out my work on GitHub. Leave a star! (Or whatever)"
 			/>
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				href="https://www.linkedin.com/in/duncan-wardlaw-b1619b198/"
+				title="LinkedIn"
+				body="Follow me, message me, anything you want."
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+				href="https://astro.build/work/"
+				title="My Work"
+				body="Explore some of my projects"
 			/>
 			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				href="https://astro.build/duncan/"
+				title="Personal Page"
+				body="A non-technical part of the site. Learn more about me!"
 			/>
 		</ul>
+		<img src="../../duncan (2).jpg" alt="" width="80%" class="homeImg">
 	</main>
 </Layout>
 
@@ -77,5 +75,8 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
 		padding: 0;
+	}
+	.homeImg {
+		margin-left: 10%;
 	}
 </style>
