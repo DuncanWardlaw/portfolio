@@ -3,6 +3,7 @@
 	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
+		"build:digitalocean": "npm install --production=false && npm run build && npm ci",
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro build",
@@ -10,6 +11,7 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"astro": "^2.0.9"
+		"astro": "^2.0.9",
+		"firebase": "^9.17.1"
 	}
 }
